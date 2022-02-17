@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dom to image | ZERO</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo/fox.png">
+    <meta name="description" content="我的个人博客网站">
+    
+    <link rel="preload" href="/assets/css/0.styles.32c2d0d6.css" as="style"><link rel="preload" href="/assets/js/app.a37032b0.js" as="script"><link rel="preload" href="/assets/js/3.06456f0c.js" as="script"><link rel="preload" href="/assets/js/2.cf191f2b.js" as="script"><link rel="preload" href="/assets/js/13.24b0603c.js" as="script"><link rel="prefetch" href="/assets/js/10.e79abaa2.js"><link rel="prefetch" href="/assets/js/11.aa79d3ba.js"><link rel="prefetch" href="/assets/js/12.508fef53.js"><link rel="prefetch" href="/assets/js/14.1ef20ac8.js"><link rel="prefetch" href="/assets/js/15.8066332e.js"><link rel="prefetch" href="/assets/js/16.81ae3ede.js"><link rel="prefetch" href="/assets/js/17.bb2a3644.js"><link rel="prefetch" href="/assets/js/4.8bcc8726.js"><link rel="prefetch" href="/assets/js/5.190b1944.js"><link rel="prefetch" href="/assets/js/6.cc292f73.js"><link rel="prefetch" href="/assets/js/7.a51944dc.js"><link rel="prefetch" href="/assets/js/8.6a0e2479.js"><link rel="prefetch" href="/assets/js/9.a70c643c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.32c2d0d6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ZERO</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/IT/" class="nav-link router-link-active">
+  编程
+</a></div><div class="nav-item"><a href="/psychology/" class="nav-link">
+  心理学
+</a></div><div class="nav-item"><a href="/utilityRoom/" class="nav-link">
+  杂物间
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/IT/" class="nav-link router-link-active">
+  编程
+</a></div><div class="nav-item"><a href="/psychology/" class="nav-link">
+  心理学
+</a></div><div class="nav-item"><a href="/utilityRoom/" class="nav-link">
+  杂物间
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>栏目碎碎念</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/IT/domToImage.html" aria-current="page" class="active sidebar-link">dom to image</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/IT/domToImage.html#js库支持" class="sidebar-link">js库支持</a></li><li class="sidebar-sub-header"><a href="/IT/domToImage.html#实现原理" class="sidebar-link">实现原理</a></li><li class="sidebar-sub-header"><a href="/IT/domToImage.html#实现代码" class="sidebar-link">实现代码</a></li></ul></li><li><a href="/IT/BMap.html" class="sidebar-link">百度地图 BMap</a></li><li><a href="/IT/VCBuild.exe.html" class="sidebar-link">VCBuild.exe</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发软件配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="dom-to-image"><a href="#dom-to-image" class="header-anchor">#</a> <em>dom to image</em></h1> <h2 id="js库支持"><a href="#js库支持" class="header-anchor">#</a> js库支持</h2> <blockquote><p>dom-to-image.min.js</p></blockquote> <blockquote><p>FileSaver.js</p></blockquote> <h2 id="实现原理"><a href="#实现原理" class="header-anchor">#</a> 实现原理</h2> <p>将dom成图片</p> <h2 id="实现代码"><a href="#实现代码" class="header-anchor">#</a> 实现代码</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;text/javascript&quot;</span><span class="token operator">&gt;</span>
+    <span class="token keyword">function</span> <span class="token function">dom2Image</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">let</span> fileName <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'select_date'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token operator">+</span><span class="token string">'.png'</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      domtoimage<span class="token punctuation">.</span><span class="token function">toBlob</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'dom_to_image'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">blob</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              window<span class="token punctuation">.</span><span class="token function">saveAs</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span>dom2Image<span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/IT/" class="prev router-link-active">
+        IT
+      </a></span> <span class="next"><a href="/IT/BMap.html">
+        百度地图 BMap
+      </a>
+      →
+    </span></p></div> <div class="footer"><div class="Links"><span>友情链接</span> <span class="links-logo"><a href="https://www.cnblogs.com/deali/"><img title="程序设计实验室" src="/assets/img/DealiLogo.21e99557.jpg"></a></span></div> <div class="copyright">
+        Copyright © 2022 ZERO. All Rights Reserved
+      </div></div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a37032b0.js" defer></script><script src="/assets/js/3.06456f0c.js" defer></script><script src="/assets/js/2.cf191f2b.js" defer></script><script src="/assets/js/13.24b0603c.js" defer></script>
+  </body>
+</html>
